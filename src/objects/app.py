@@ -76,9 +76,7 @@ class App():
             self.createCoinSelector()
         with col2:
             self.createTimePeriodSelector()
-        toggle_placeholder = st.empty()
-        with toggle_placeholder:
-            self.createPlotSelector()
+        self.createPlotSelector()
         col3, col4 = st.columns([1, 15])
         with col3:
             self.createCurrencySelector()
