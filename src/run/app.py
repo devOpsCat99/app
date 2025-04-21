@@ -6,7 +6,7 @@ import threading
 
 def app():
     start_app = App()
-    threading.Thread(target = start_app.executeApp()).start()
+    start_app.executeApp()
     
 if __name__ == "__main__":
     app()
